@@ -175,7 +175,7 @@ export default function Home() {
             <div>
               <div className="max-w-lg md:max-w-none">
                 <h2 className="text-2xl font-semibold text-gray-900 sm:text-3xl">
-                  Sarasota&apos;s 1# 24/7 Auto Mechanic
+                   24/7 Auto Mechanic In Sarasota
                 </h2>
 
                 <p className="mt-4 text-gray-700">
