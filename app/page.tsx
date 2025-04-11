@@ -1,8 +1,10 @@
 import Image from 'next/image';
+import logo from '../public/logo.png';
 
 export default function Home() {
   return (
     <>
+      {/* Header */}
       <header className="flex py-4 px-4 sm:px-10 bg-[#00ced1] min-h-[70px] tracking-wide relative z-50">
         <div className="flex flex-wrap items-center justify-between gap-5 w-full">
           <a href="javascript:void(0)" className="max-sm:hidden">
@@ -11,7 +13,7 @@ export default function Home() {
               alt="logo"
               className="w-36"
             /> */}
-            Anytime Auto
+            {/* Anytime Auto */}
           </a>
           <a href="javascript:void(0)" className="hidden max-sm:block">
             <img
@@ -43,7 +45,7 @@ export default function Home() {
                 />
               </svg>
             </button>
-            <ul className="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+            {/* <ul className="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
               <li className="mb-6 hidden max-lg:block">
                 <a href="javascript:void(0)">
                   <img
@@ -101,7 +103,7 @@ export default function Home() {
                   Contact
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </div>
           <div className="flex max-lg:ml-auto space-x-4">
             <button id="toggleOpen" className="lg:hidden">
@@ -121,17 +123,23 @@ export default function Home() {
           </div>
         </div>
       </header>
-
       <div>
         <div className="relative grid w-full bg-[#00ced1] h-96 lg:h-[32rem] place-items-center">
           <div className="flex flex-col items-center mx-auto text-center">
+            <Image
+              className="mb-2"
+              src={logo}
+              alt="Anytime Auto"
+              width={300}
+              height={300}
+            />
             <h1 className="text-4xl font-semibold text-white uppercase md:text-6xl">
               Anytime Auto
             </h1>
             <p className="mt-6 text-lg leading-5 text-white">
-              The best in town.
+              Click To Contact
             </p>
-            <a href="#about" className="mt-8 cursor-pointer animate-bounce">
+            <a href="#contact" className="mt-8 cursor-pointer animate-bounce">
               <svg
                 width={53}
                 height={53}
@@ -157,7 +165,7 @@ export default function Home() {
           <path d="M1440 0H0V57C720 0 1440 57 1440 57V0Z" />
         </svg>
       </div>
-
+      {/* Intro */}
       <div
         className="bg-white rounded-2xl shadow my-4 container justify-center mx-auto"
         id="about"
@@ -188,7 +196,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
+      {/* Features */}
       <section className="">
         <div className="container px-6 py-10 mx-auto">
           <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
@@ -374,7 +382,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+      {/* Banner */}
       <div className="carBlue px-6 py-12">
         <div className="container mx-auto flex flex-col justify-center items-center text-center">
           <h2 className="text-white sm:text-4xl text-3xl font-bold mb-6">
@@ -388,8 +396,186 @@ export default function Home() {
           </button>
         </div>
       </div>
+      {/* About */}
+      <div className="text-gray-600 body-font bg-white container mx-auto justify-center my-4 shadow-2xl rounded-2xl">
+        <div className="container px-5 py-24 mx-auto flex flex-col">
+          <div className="lg:w-4/6 mx-auto">
+            <div className="flex flex-col sm:flex-row mt-10">
+              <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    className="w-10 h-10"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+                    <circle cx={12} cy={7} r={4} />
+                  </svg>
+                </div>
+                <div className="flex flex-col items-center text-center justify-center">
+                  <h2 className="font-medium title-font mt-4 text-gray-900 text-lg">
+                    Scott Templin
+                  </h2>
+                  <div className="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4" />
+                  <p className="text-base">
+                    Raclette knausgaard hella meggs normcore williamsburg enamel
+                    pin sartorial venmo tbh hot chicken gentrify portland.
+                  </p>
+                </div>
+              </div>
+              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p className="leading-relaxed text-lg mb-4">
+                  Meggings portland fingerstache lyft, post-ironic fixie man bun
+                  banh mi umami everyday carry hexagon locavore direct trade art
+                  party. Locavore small batch listicle gastropub farm-to-table
+                  lumbersexual salvia messenger bag. Coloring book flannel
+                  truffaut craft beer drinking vinegar sartorial, disrupt
+                  fashion axe normcore meh butcher. Portland 90's scenester
+                  vexillologist forage post-ironic asymmetrical, chartreuse
+                  disrupt butcher paleo intelligentsia pabst before they sold
+                  out four loko. 3 wolf moon brooklyn.
+                </p>
+                <a className="text-indigo-500 inline-flex items-center">
+                  Learn More
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    className="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div className="bg-white rounded-2xl shadow my-4 container justify-center mx-auto">
+      {/* Gallery */}
+      <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+          <div className="space-y-2">
+            <img
+              className="rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1540575861501-7cf05a4b125a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+            <img
+              className="rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1668906093328-99601a1aa584?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+            <img
+              className="rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1567016526105-22da7c13161a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+          </div>
+          <div className="space-y-2">
+            <img
+              className="rounded-2xl rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1668584054131-d5721c515211?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+            <img
+              className="rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1664574654529-b60630f33fdb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+          </div>
+          <div className="space-y-2">
+            <img
+              className="rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+            <img
+              className="rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+            <img
+              className="rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+          </div>
+          <div className="space-y-2">
+            <img
+              className="rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1668869713519-9bcbb0da7171?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+            <img
+              className="rounded-2xl w-full h-auto object-cover"
+              src="https://images.unsplash.com/photo-1668584054035-f5ba7d426401?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=560&q=80"
+              alt="Gallery Masonry Image"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* FAQ */}
+
+      <div className="px-4 py-20 my-4 bg-white container mx-auto justify-center rounded-2xl shadow-2xl">
+        <div className="flex flex-col max-w-6xl mx-auto md:flex-row">
+          <h2 className="w-full mr-8 text-3xl font-extrabold text-slate-800 leading-9 md:w-1/3">
+            Frequently Asked Questions
+          </h2>
+          <dl className="w-full md:w-2/3">
+            <dt className="mb-4">
+              <h3 className="text-xl font-semibold text-slate-800">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              </h3>
+            </dt>
+            <dd className="mb-16">
+              <p className="text-slate-800">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                doloremque saepe architecto maiores repudiandae amet perferendis
+                repellendus, reprehenderit voluptas sequi.
+              </p>
+            </dd>
+            <dt className="mb-4">
+              <h3 className="text-xl font-semibold text-slate-800">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              </h3>
+            </dt>
+            <dd className="mb-16">
+              <p className="text-slate-800">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                doloremque saepe architecto maiores repudiandae amet perferendis
+                repellendus, reprehenderit voluptas sequi.
+              </p>
+            </dd>
+            <dt className="mb-4">
+              <h3 className="text-xl font-semibold text-slate-800">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit?
+              </h3>
+            </dt>
+            <dd className="mb-16">
+              <p className="text-slate-800">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                doloremque saepe architecto maiores repudiandae amet perferendis
+                repellendus, reprehenderit voluptas sequi.
+              </p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+
+      {/* Contact */}
+      <div
+        id="contact"
+        className="bg-white rounded-2xl shadow my-4 container justify-center mx-auto"
+      >
         <div className="grid md:grid-cols-2 gap-16 items-center relative overflow-hidden p-8 s">
           <div>
             <h2 className="text-slate-900 text-3xl font-semibold">
@@ -399,31 +585,18 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               ab nulla quod dignissimos vel non corrupti doloribus voluptatum
               eveniet
+              <div className="my-5 text-2xl text-black">
+                Store phone number, address, and email will go here.
+              </div>
             </p>
             <form>
               <div className="space-y-4 mt-8">
                 <input
                   type="text"
-                  placeholder="Full Name"
+                  placeholder="Name"
                   className="px-2 py-3 bg-white w-full text-slate-900 text-sm border-b border-slate-300 focus:border-blue-600 outline-none"
                 />
-                <input
-                  type="text"
-                  placeholder="Street"
-                  className="px-2 py-3 bg-white w-full text-slate-900 text-sm border-b border-slate-300 focus:border-blue-600 outline-none"
-                />
-                <div className="grid grid-cols-2 gap-6">
-                  <input
-                    type="text"
-                    placeholder="City"
-                    className="px-2 py-3 bg-white w-full text-slate-900 text-sm border-b border-slate-300 focus:border-blue-600 outline-none"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Postcode"
-                    className="px-2 py-3 bg-white w-full text-slate-900 text-sm border-b border-slate-300 focus:border-blue-600 outline-none"
-                  />
-                </div>
+
                 <input
                   type="number"
                   placeholder="Phone No."
@@ -477,12 +650,13 @@ export default function Home() {
                   />
                 </svg>
                 <a href="javascript:void(0)" className="text-sm ml-3">
-                  <span className="font-medium">+158 996 888</span>
+                  {/* <span className="font-medium">+158 996 888</span> */}
                 </a>
               </li>
             </ul>
           </div>
           <div className="z-10 relative h-full max-md:min-h-[350px]">
+            <div className="text-9xl text-black">MAP WILL GO HERE</div>
             {/* <iframe
               src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"
               className="left-0 top-0 h-full w-full"
@@ -492,13 +666,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <footer className="carBlue mt-4 text-gray-300 py-6 px-16 tracking-wide">
+      {/* Footer */}
+      <footer className="carBlue mt-4 text-black py-6 px-16 tracking-wide">
         <div className="flex justify-between items-center max-lg:flex-col text-center flex-wrap gap-4">
-          <p className="text-[15px] leading-loose">
+          <p className="text-[15px] text-black leading-loose">
             © Anytime Auto. All rights reserved.
           </p>
-          <ul className="flex space-x-6 gap-y-2 max-lg:justify-center flex-wrap">
+          {/* <ul className="flex space-x-6 gap-y-2 max-lg:justify-center flex-wrap">
             <li>
               <a
                 href="javascript:void(0)"
@@ -523,7 +697,7 @@ export default function Home() {
                 Contact
               </a>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </footer>
     </>
